@@ -1,0 +1,74 @@
+/*text body for top and bottom padding*/
+body {
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+/*position,margins for navigation items*/
+.nav {
+    top: 0%;
+    position: fixed;
+    margin-left: 92%;
+    background: #29498a;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/*link color*/
+a {
+    color: black;
+}
+/*navigation color*/
+.heading a {
+    color: #007cc9;
+}
+/*header formatting*/
+.fixed-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    font-family: arial;
+    font-style: regular;
+    background: #29498a;
+    padding: 15px 0;
+    color: #fff;
+}
+/*header color*/
+.fixed-header a {
+    color: white;
+}
+/*editing*/
+.edit {
+    margin-left: 20px;
+}
+/*result message Editing*/
+.movie {
+    margin-left: 200px;
+}
+
+.msg {
+    margin-left: 75px;
+}
+/*menu link color*/
+.movie-item-list {
+    color: #29498a;
+}
+/*footer formatting*/
+.fixed-footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    font-family: arial;
+    font-style: regular;
+    font-size: 15px;
+    background: #919aa3;
+    padding: 15px 0;
+    color: #080112;
+}
+/*body text editing*/
+.container {
+    width: 100%;
+    font-size: 25px;
+    margin: 0 auto;
+}
