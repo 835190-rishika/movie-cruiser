@@ -88,7 +88,7 @@
                     </c:otherwise>
 
                 </c:choose>
-                <label for="del" />
+                <label for="del"/>
 
             </tr>
 
