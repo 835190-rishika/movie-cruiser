@@ -1,8 +1,8 @@
-function movie() {
-    var title = document.forms["user"]["title"].value;
-    var boxOffice = document.forms["user"]["boxOffice"].value;
-    var dateOfLaunch = document.forms["user"]["dateOfLaunch"].value;
-    var genre = document.forms["user"]["genre"].value;
+function validateMovieForm() {
+    var title = document.forms["movieForm"]["title"].value;
+    var boxOffice = document.forms["movieForm"]["boxOffice"].value;
+    var dateOfLaunch = document.forms["movieForm"]["dateOfLaunch"].value;
+    var genre = document.forms["movieForm"]["genre"].value;
     var regNumbers = (/^.*[0-9].*$/);
     var regSpecial = (/^.*[!#@&?].*$/);
     var regCharacters = (/^.*[a-zA-Z!#@&?].*$/);

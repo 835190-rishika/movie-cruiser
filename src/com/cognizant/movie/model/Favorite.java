@@ -26,9 +26,17 @@ public class Favorite {
         this.noOfFavorite = noOfFavorite;
     }
 
-    @Override
-    public String toString() {
-        return "Favorite [favoriteList=" + favoriteList + ", total=" + noOfFavorite + "]";
+    public Favorite(List<Movie> favoriteList, int noOfFavorite) {
+        super();
+        this.favoriteList = favoriteList;
+        this.noOfFavorite = noOfFavorite;
     }
 
+    @Override
+    public String toString() {
+        return "Favorite [favoriteList=" + favoriteList + ", noOfFavorite=" + noOfFavorite + "]";
+    }
+    
+
+   
 }
