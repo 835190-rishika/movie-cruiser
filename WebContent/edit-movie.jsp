@@ -89,9 +89,7 @@
 
                 </c:choose>
                 <label for="del"/>
-
             </tr>
-
             <tr>
                 <td><b><input type="submit"
                         style="background-color: #29498a; color: white; width: 150px; height: 40px; border: none;"
