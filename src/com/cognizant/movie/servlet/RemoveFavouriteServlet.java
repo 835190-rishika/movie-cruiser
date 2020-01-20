@@ -36,7 +36,7 @@ public class RemoveFavouriteServlet extends HttpServlet {
             int noOfFavorite = 0;
             noOfFavorite = movieList.size();
             favorite.setNoOfFavorite(noOfFavorite);
-           
+
             request.setAttribute("movie", movieList);
             request.setAttribute("favorite", favorite);
             request.setAttribute("removeFavoriteItemStatus", true);

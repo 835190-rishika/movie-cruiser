@@ -36,23 +36,22 @@
     <table id="table2">
         <col width="200px" />
         <col width="100px" />
-        <col width="90px" />
+        <col width="110px" />
 
 
         <tr>
             <th align="left">Name</th>
-         
             <th align="right">Box Office</th>
-               <th align="center">Genre</th>
+            <th align="center">Genre</th>
 
         </tr>
         <c:forEach items="${movie}" var="movie">
             <tr>
                 <td>${movie.getTitle()}</td>
-                
+
                 <td align="right"><f:formatNumber type="currency" currencySymbol="$"
                         minFractionDigits="2" value="${movie.getBoxOffice()}"></f:formatNumber></td>
-                         <td align="center">${movie.getGenre()}</td>
+                <td align="center">${movie.getGenre()}</td>
 
                 <td align="right"><a href="RemoveFavourite?movieId=${movie.getMovieId()}">Delete</a></td>
             </tr>
@@ -60,7 +59,7 @@
         <tr>
             <td></td>
             <td align="left"><b>No of Favorites:</b></td>
-            <td ><b>${favorite.getNoOfFavorite()}</b></td>
+            <td><b>${favorite.getNoOfFavorite()}</b></td>
         </tr>
 
     </table>

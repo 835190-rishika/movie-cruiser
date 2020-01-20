@@ -15,22 +15,21 @@ import com.cognizant.movie.dao.MovieDao;
 import com.cognizant.movie.dao.MovieDaoCollectionImpl;
 import com.cognizant.movie.model.Movie;
 
-
 @WebServlet("/AddToFavourite")
 public class AddToFavouriteServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	    long movieId = Long.parseLong(request.getParameter("movieId"));
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        long movieId = Long.parseLong(request.getParameter("movieId"));
         long userId = 1L;
         FavoriteDao favoriteDao = new FavoriteDaoCollectionImpl();
         favoriteDao.addFavoritesById(userId, movieId);
         MovieDao movieDao = new MovieDaoCollectionImpl();
-        List<Movie> movieList= movieDao.getMovieListCustomer();
+        List<Movie> movieList = movieDao.getMovieListCustomer();
         request.setAttribute("addFavoriteStatus", true);
         request.setAttribute("movie", movieList);
         request.getRequestDispatcher("movie-list-customer.jsp").forward(request, response);
-	}
+    }
 
 }
-

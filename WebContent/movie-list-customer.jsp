@@ -34,7 +34,7 @@
         <col width="150px" />
         <col width="80px" />
         <col width="140px" />
-        <col width="100px" />
+        <col width="110px" />
 
         <tr>
             <th align="left">Title</th>
@@ -57,8 +57,8 @@
                 <td align="center">${movie.getGenre()}</td>
 
 
-                <td align="center"><a href="AddToFavourite?movieId=${movie.getMovieId()}">Add to
-                        Favorite</a></td>
+                <td align="center"><a href="AddToFavourite?movieId=${movie.getMovieId()}">Add
+                        to Favorite</a></td>
             </tr>
         </c:forEach>
     </table>

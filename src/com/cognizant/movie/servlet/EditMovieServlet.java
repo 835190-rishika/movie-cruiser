@@ -37,8 +37,8 @@ public class EditMovieServlet extends HttpServlet {
         } else {
             teaser = true;
         }
-        Movie movie = new Movie(movieId, title, boxOffice, active, DateUtil.convertToDate(dateOfLaunch),
-                genre, teaser);
+        Movie movie = new Movie(movieId, title, boxOffice, active,
+                DateUtil.convertToDate(dateOfLaunch), genre, teaser);
         MovieDao movieDao = new MovieDaoCollectionImpl();
         movieDao.modifyMovieLists(movie);
         request.getRequestDispatcher("edit-movie-status.jsp").forward(request, response);
