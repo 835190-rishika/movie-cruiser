@@ -83,12 +83,12 @@
                             checked="checked">Has Teaser</td>
                     </c:when>
                     <c:otherwise>
-                        <td><input type="checkbox" name="has Teaser" value="No"
-                            checked="checked">Has Teaser</td>
+                        <td><input type="checkbox" name="has Teaser" value="No">Has
+                            Teaser</td>
                     </c:otherwise>
 
                 </c:choose>
-                <label for="del"/>
+                <label for="del" />
             </tr>
             <tr>
                 <td><b><input type="submit"
