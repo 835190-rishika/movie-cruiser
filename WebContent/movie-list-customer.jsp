@@ -26,7 +26,7 @@
         <h1 class="edit">Movies</h1>
     </div>
     <c:if test="${addFavoriteStatus==true }">
-        <h4 style="color: #0b8038" id="remove-favorite" class="edit">Item Added Into Favorite
+        <h4 style="color: #0b8038" id="remove-favorite" class="edit">Item Added to Favorite
             Successfully</h4>
     </c:if>
     <table id="table2" class="edit">
